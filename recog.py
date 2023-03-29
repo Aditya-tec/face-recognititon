@@ -8,10 +8,10 @@ video_capture = cv2.VideoCapture(0)
 
 # Load known faces
 
-elon_image = face_recognition.load_image_file("faces\\harry.jpeg")
+elon_image = face_recognition.load_image_file("filename.jpg")
 elon_encoding = face_recognition.face_encodings(elon_image)[0]
 
-sharvin_image = face_recognition.load_image_file("faces\\rohan.jpg")
+sharvin_image = face_recognition.load_image_file("filename.jpg")
 sharvin_encoding = face_recognition.face_encodings(sharvin_image)[0]
 
 known_face_encodings = [elon_encoding, sharvin_encoding]
